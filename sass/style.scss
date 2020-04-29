@@ -1,0 +1,26 @@
+h1 {
+    color: green($color: #000000);
+nav {
+    background-color: transparentize($color: #00000000, $amount: 0);
+}
+.container {
+    height: 100vh;
+    position: relative;
+    background-image: url("https://images.pexels.com/photos/3031670/pexels-photo-3031670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    .title {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #ffffff;
+        text-align: center;
+    }
+}
+.btn-warning{
+    border-radius: 0em;
+    color: #ffffff;
+} 
