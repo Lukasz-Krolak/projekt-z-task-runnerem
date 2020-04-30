@@ -1,5 +1,27 @@
-h1 {
-    color: green($color: #000000);
+.navbar-brand {
+    /* Style for "Golden" */
+    width: 79px;
+    height: 28px;
+    color: #fed136;
+    color: #ffffff;
+    font-family: "Wisdom - Script";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 41px;
+    /* Text style for "G, olden" */
+    color: #fed136;
+    letter-spacing: 1.3px;
+}
+.navbar-nav {
+    /* Style for "Home" */
+    height: 10px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 41px;
+    text-transform: uppercase;
+}
 nav {
     background-color: transparentize($color: #00000000, $amount: 0);
 }
@@ -24,3 +46,13 @@ nav {
     border-radius: 0em;
     color: #ffffff;
 } 
+.card-i {
+    font-size: 30px;
+    color: #fed136
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: $color-light;
+
+    border-radius: 50%;
+}
