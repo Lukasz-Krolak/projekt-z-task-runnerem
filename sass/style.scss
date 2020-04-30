@@ -25,34 +25,62 @@
 nav {
     background-color: transparentize($color: #00000000, $amount: 0);
 }
-.container {
+.box {
     height: 100vh;
     position: relative;
     background-image: url("https://images.pexels.com/photos/3031670/pexels-photo-3031670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    .box::after {
+        /* Style for "Tint" */
+        width: 1424px;
+        height: 729px;
+        background-color: #000000;
+        opacity: 0.5;
+    }
     .title {
         position: absolute;
         width: 100%;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        color: #ffffff;
         text-align: center;
+        h2 {
+            /* Style for "Welcome To" */
+            width: 430px;
+            height: 32px;
+            color: #ffffff;
+            font-family: "Droid Serif";
+            font-size: 40px;
+            /* Text style for "W, elcome" */
+            letter-spacing: -1px;
+        }
+        h1 {
+            /* Style for "It’s nice" */
+            width: 844px;
+            height: 55px;
+            color: #ffffff;
+            font-family: Montserrat;
+            font-size: 75px;
+            font-weight: 700;
+            text-transform: uppercase;
+            /* Text style for "It’s nice" */
+            letter-spacing: -1.88px;
+        }
     }
 }
+
 .btn-warning{
     border-radius: 0em;
     color: #ffffff;
 } 
 .card-i {
     font-size: 30px;
-    color: #fed136
+    color: #fed136;
     width: 60px;
     height: 60px;
     line-height: 60px;
     color: $color-light;
-
     border-radius: 50%;
 }
