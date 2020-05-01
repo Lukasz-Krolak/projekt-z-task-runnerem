@@ -125,13 +125,26 @@ nav {
   text-transform: uppercase;
 }
 
+.card {
+  border: none;
+  position: relative;
+  text-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
 .card-i {
   font-size: 30px;
   color: #fed136;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   line-height: 60px;
-  color: #aad136;
   border-radius: 50%;
+  border: solid 2px;
+  text-align: center;
+}
+
+.two-titles {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
