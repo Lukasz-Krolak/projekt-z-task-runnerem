@@ -1,6 +1,28 @@
 @charset "UTF-8";
+header {
+  position: relative;
+  background-image: url("https://images.pexels.com/photos/1639729/pexels-photo-1639729.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header::before {
+  /* Style for "Tint" */
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+  left: 0;
+  top: 0;
+}
+
 .navbar-brand {
   /* Style for "Golden" */
+  background-color: transparent;
+  position: absolute;
   width: 79px;
   height: 28px;
   color: #fed136;
@@ -25,6 +47,10 @@
   text-transform: uppercase;
 }
 
+.navbar-nav a {
+  color: #ffffff;
+}
+
 nav {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -32,18 +58,6 @@ nav {
 .box {
   height: 100vh;
   position: relative;
-  background-image: url(images\Background_Image.png);
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.box ::before {
-  /* Style for "Tint" */
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  opacity: 0.5;
 }
 
 .box .title {
@@ -57,8 +71,6 @@ nav {
 
 .box .title h2 {
   /* Style for "Welcome To" */
-  width: 430px;
-  height: 32px;
   color: #ffffff;
   font-family: "Droid Serif";
   font-size: 40px;
@@ -68,8 +80,6 @@ nav {
 
 .box .title h1 {
   /* Style for "It’s nice" */
-  width: 844px;
-  height: 55px;
   color: #ffffff;
   font-family: Montserrat;
   font-size: 75px;
@@ -81,8 +91,6 @@ nav {
 
 .container .box h1 {
   /* Style for "Services" */
-  width: 193px;
-  height: 30px;
   color: #222222;
   font-family: Montserrat;
   font-size: 40px;
@@ -95,8 +103,6 @@ nav {
 
 .container .box h6 {
   /* Style for "It’s nice" */
-  width: 844px;
-  height: 55px;
   color: #ffffff;
   font-family: Montserrat;
   font-size: 75px;
@@ -107,8 +113,16 @@ nav {
 }
 
 .btn-warning {
-  border-radius: 0em;
+  /* Style for "Button" */
+  width: 240px;
+  height: 65px;
+  background-color: #fed136;
+  border-radius: 1px;
   color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .card-i {
