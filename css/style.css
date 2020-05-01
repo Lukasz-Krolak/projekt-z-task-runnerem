@@ -89,29 +89,6 @@ nav {
   letter-spacing: -1.88px;
 }
 
-.container .box h1 {
-  /* Style for "Services" */
-  color: #222222;
-  font-family: Montserrat;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 75px;
-  text-transform: uppercase;
-  /* Text style for "S, ervices" */
-  letter-spacing: -1px;
-}
-
-.container .box h6 {
-  /* Style for "It’s nice" */
-  color: #ffffff;
-  font-family: Montserrat;
-  font-size: 75px;
-  font-weight: 700;
-  text-transform: uppercase;
-  /* Text style for "It’s nice" */
-  letter-spacing: -1.88px;
-}
-
 .btn-warning {
   /* Style for "Button" */
   width: 240px;
@@ -129,8 +106,7 @@ nav {
   border: none;
   position: relative;
   text-align: center;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 
 .card-i {
@@ -146,5 +122,55 @@ nav {
 
 .two-titles {
   text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
+
+.two-titles h2 {
+  /* Style for "Services" */
+  color: #222222;
+  font-family: 'Montserrat';
+  font-size: 40px;
+  font-weight: 700;
+  max-height: 75px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 8px;
+  /* Text style for "S, ervices" */
+  letter-spacing: -1px;
+}
+
+.two-titles h6 {
+  /* Style for "It’s nice" */
+  color: #777777;
+  font-family: Gentium Book Basic;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+.card-body h5 {
+  /* Style for "Responsive" */
+  color: #222222;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 50px;
+  /* Text style for "R, esponsi" */
+  letter-spacing: -0.45px;
+}
+
+.card-body p {
+  /* Style for "Proin iacu" */
+  flex-wrap: wrap;
+  height: 57px;
+  max-width: 274px;
+  color: #777777;
+  font-family: 'Roboto Slab';
+  font-size: 14px;
+  font-weight: 400;
+  /* Text style for "P, roin ia" */
+  letter-spacing: -0.35px;
+}
+
 /*# sourceMappingURL=style.css.map */
