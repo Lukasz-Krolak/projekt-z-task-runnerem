@@ -32,7 +32,7 @@ nav {
 .box {
   height: 100vh;
   position: relative;
-  background-image: url("https://zapodaj.net/4fb61fd4cb0bc.png.html");
+  background-image: url("#");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
