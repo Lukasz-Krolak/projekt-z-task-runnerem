@@ -185,4 +185,21 @@ nav {
   letter-spacing: -0.35px;
   padding-top: 0 auto;
 }
+
+footer p {
+  /* Style for "© Copyrigh" */
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  /* Text style for "© Copyrigh" */
+  letter-spacing: -0.35px;
+}
+
+footer .fab {
+  width: 40px;
+  height: 40 px;
+  color: #222222;
+}
 /*# sourceMappingURL=style.css.map */
