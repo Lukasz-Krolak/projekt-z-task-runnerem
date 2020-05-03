@@ -97,6 +97,15 @@ nav {
     text-align: center;
     align-items: center;
 }
+.card img {
+    width: 100%;
+    
+/* Style for "Image" */
+    width: 291px;
+    height: 300px;
+    object-fit: cover;
+    padding: 0;
+}
 .card-i {
     font-size: 30px;
     color: #fed136;
@@ -143,6 +152,7 @@ nav {
         line-height: 50px;
         /* Text style for "R, esponsi" */
         letter-spacing: -0.45px;
+        margin-bottom: -10px;
     }
     p {
         /* Style for "Proin iacu" */
@@ -155,5 +165,6 @@ nav {
         font-weight: 400;
         /* Text style for "P, roin ia" */
         letter-spacing: -0.35px;
+        padding-top: 0 auto;
     }
 }

@@ -106,7 +106,17 @@ nav {
   border: none;
   position: relative;
   text-align: center;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.card img {
+  width: 100%;
+  /* Style for "Image" */
+  width: 291px;
+  height: 300px;
+  object-fit: cover;
+  padding: 0;
 }
 
 .card-i {
@@ -158,11 +168,13 @@ nav {
   line-height: 50px;
   /* Text style for "R, esponsi" */
   letter-spacing: -0.45px;
+  margin-bottom: -10px;
 }
 
 .card-body p {
   /* Style for "Proin iacu" */
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   height: 57px;
   max-width: 274px;
   color: #777777;
@@ -171,6 +183,6 @@ nav {
   font-weight: 400;
   /* Text style for "P, roin ia" */
   letter-spacing: -0.35px;
+  padding-top: 0 auto;
 }
-
 /*# sourceMappingURL=style.css.map */
