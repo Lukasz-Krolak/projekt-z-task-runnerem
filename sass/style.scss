@@ -29,7 +29,6 @@ header {
     font-size: 26px;
     font-weight: 400;
     line-height: 41px;
-    /* Text style for "Golden" */
     color: #fed136;
     letter-spacing: 1.3px;
 }
@@ -127,8 +126,6 @@ nav {
 }
 .card img {
     width: 100%;
-    
-/* Style for "Image" */
     width: 291px;
     height: 300px;
     object-fit: cover;
@@ -143,7 +140,6 @@ nav {
     border-radius: 50%;
     border: solid 2px;
     text-align: center;
-    justify-content: ;
 }
 .two-titles {
     text-align: center;
@@ -191,6 +187,8 @@ nav {
         font-weight: 400;
         letter-spacing: -0.35px;
         padding-top: 0 auto;
+        margin: 5px auto;
+        justify-content: center;
     }
 }
 footer {
@@ -209,4 +207,19 @@ footer {
         height: 40 px;
         color: #222222;
     }
+}
+footer {
+    .row {
+        justify-content: center;
+        p {
+            text-align: center;
+        }
+    }
+}
+.list-inline {
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: center;
 }
