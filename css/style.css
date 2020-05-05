@@ -9,7 +9,6 @@ header {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  widows: 100%;
   height: 100%;
 }
 
@@ -25,20 +24,26 @@ header::before {
   top: 0;
 }
 
+.navbar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
 .navbar-brand {
   /* Style for "Golden" */
-  background-color: transparent;
   position: absolute;
+  background-color: transparent;
   width: 79px;
-  height: 28px;
-  color: #fed136;
-  color: #ffffff;
   font-family: 'Marck Script';
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 41px;
   color: #fed136;
   letter-spacing: 1.3px;
+  -ms-flex-pack: left;
+      justify-content: left;
 }
 
 .navbar-collapse {
@@ -48,14 +53,21 @@ header::before {
       flex-direction: row;
   -ms-flex-pack: end;
       justify-content: flex-end;
+  position: relative;
 }
 
 .navbar-collapse .navbar-nav {
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  /* Style for "Home" */
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 41px;
+  text-transform: uppercase;
 }
 
 .navbar-collapse ul {
@@ -75,17 +87,6 @@ header::before {
 
 a:hover {
   font-size: 150%;
-}
-
-.navbar-nav {
-  /* Style for "Home" */
-  height: 10px;
-  color: #ffffff;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 41px;
-  text-transform: uppercase;
 }
 
 nav {
@@ -113,6 +114,7 @@ nav {
   font-size: 40px;
   /* Text style for "W, elcome" */
   letter-spacing: -1px;
+  margin-top: 0em;
 }
 
 .box .title h1 {
@@ -145,9 +147,16 @@ nav {
   font-size: 16px;
 }
 
+.btn:hover {
+  font-size: 140%;
+}
+
 .card {
   border: none;
-  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   text-align: center;
   -ms-flex-align: center;
       align-items: center;
@@ -155,7 +164,6 @@ nav {
 
 .card img {
   width: 100%;
-  width: 291px;
   height: 300px;
   object-fit: cover;
   padding: 0;
@@ -165,7 +173,6 @@ nav {
   font-size: 30px;
   color: #fed136;
   width: 70px;
-  height: 70px;
   line-height: 60px;
   border-radius: 50%;
   border: solid 2px;
@@ -184,7 +191,6 @@ nav {
   font-family: 'Montserrat';
   font-size: 40px;
   font-weight: 700;
-  max-height: 75px;
   text-transform: uppercase;
   margin: 0 auto;
   padding: 8px;
@@ -197,7 +203,10 @@ nav {
   margin: 0 auto;
   padding: 8px;
   font-family: "Droid Serif";
-  font-size: 16px;
+}
+
+.card-body {
+  padding: 10px;
 }
 
 .card-body h5 {
@@ -214,7 +223,6 @@ nav {
 .card-body p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 57px;
   max-width: 274px;
   color: #777777;
   font-family: 'Roboto Slab';
@@ -239,14 +247,13 @@ footer p {
 }
 
 footer .fab {
-  width: 40px;
-  height: 40 px;
+  font-size: 40px;
   color: #222222;
 }
 
 footer .row {
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 footer .row p {
@@ -260,7 +267,51 @@ footer .row p {
   list-style-type: none;
   -ms-flex-direction: row;
       flex-direction: row;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  width: 20px;
+}
+
+@media (max-width: 600px) {
+  .box .title h2 {
+    font-size: 20px;
+  }
+  .box .title h1 {
+    font-size: 30px;
+  }
+  .navbar {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .navbar .navbar-brand {
+    position: relative;
+    margin: 20%;
+  }
+  .navbar .navbar-collapse {
+    margin-top: 50%;
+    width: 50%;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .navbar .navbar-nav {
+    margin: 50px;
+  }
+}
+
+@media (max-width: 300px) {
+  .two-titles h2 {
+    font-size: 25px;
+  }
+  .btn {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+footer .fab {
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
